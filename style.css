@@ -93,7 +93,7 @@ img{
     text-align: center;
     background-color: #b6b3a9d5;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+
 
 
 }
@@ -108,9 +108,8 @@ img{
     text-align: justify;
     text-decoration: none;
     list-style: none;
-    border: 2px transparent black;
     border-radius: 8%;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+
 
 }
 .monitoramento a {
@@ -143,7 +142,7 @@ img{
     text-align: justify;
     text-decoration: none;
     list-style: none;
-    border: 2px transparent black;
+
     border-radius: 8%;
 
 }
@@ -171,7 +170,7 @@ img{
     text-align: justify;
     text-decoration: none;
     list-style: none;
-    border: 2px transparent black;
+
     border-radius: 8%;
 
 }
