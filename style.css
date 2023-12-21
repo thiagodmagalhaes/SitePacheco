@@ -23,7 +23,7 @@ a{
         "header header header"
         "hero hero hero"
         "bann bann bann"
-        "monitoramento alarme camera"
+        "servicos servicos servicos"
         "bannerEmive2 bannerEmive2 bannerEmive2"
         "bannercell bannercell bannercell"
         "bannerEmive bannerEmive bannerEmive"
@@ -97,8 +97,17 @@ img{
 
 
 }
+
+.servicos{
+    display: flex;
+    background-color: #F3BF0B;
+    justify-content: space-around;
+    grid-area: servicos;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .monitoramento{
     grid-area: monitoramento;
+    width: 300px;
     background: #F3BF0B;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -114,15 +123,15 @@ img{
 
 }
 .monitoramento a {
-    color: black; /* Definindo a cor do texto do link como preto */
-    background: #F3BF0B;
-    text-decoration: none; /* Removendo sublinhado do link */
+    color: black; 
+    text-decoration: none; 
 }
 
 .centralizado {
     display: block;
     text-align: center;
-    font-weight: bold; /* Adicionando negrito para a palavra centralizada */
+    font-weight: bold; 
+    font-size: 20px;
 }
 
 .monitoramento a:hover{
@@ -132,9 +141,28 @@ img{
 
 }
 
+.monitoramento a:hover .centralizado{
+    display: none;
+}
+
+.monitoramento a  #textoculto{
+    display: none;
+}
+
+.monitoramento a:hover #textoculto{
+    display: flex;
+    color: #000000;
+    font-weight: bold;
+    font-family: monospace;
+}
+.monitoramento .fa-shield-alt {
+    font-size: 30px; 
+}
+
 .alarme{
     grid-area: alarme;
     background: #F3BF0B;
+    width: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin: 10px;
@@ -149,19 +177,35 @@ img{
 }
 
 .alarme a {
-    color: black; /* Definindo a cor do texto do link como preto */
+    color: black; 
     background: #F3BF0B;
-    text-decoration: none; /* Removendo sublinhado do link */
+    text-decoration: none; 
 }
 
-.alarme a:hover{
-    background: #f3c10b85;
-    color: #fff;
-    border-radius: 10px;
+
+
+.alarme a:hover .centralizado{
+    display: none;
+}
+
+.alarme a  #textoculto{
+    display: none;
+}
+
+.alarme a:hover #textoculto{
+    display: flex;
+    color: #000000;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.alarme .fa-volume-up {
+    font-size: 30px; 
 }
 
 .camera{
     grid-area: camera;
+    width: 300px;
     background: #F3BF0B;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -177,15 +221,28 @@ img{
 }
 
 .camera a {
-    color: black; /* Definindo a cor do texto do link como preto */
+    color: black; 
     background: #F3BF0B;
-    text-decoration: none; /* Removendo sublinhado do link */
+    text-decoration: none; 
 }
 
-.camera a:hover{
-    background: #f3c10b85;
-    color: #fff;
-    border-radius: 10px;
+.camera a:hover .centralizado{
+    display: none;
+}
+
+.camera a  #textoculto{
+    display: none;
+}
+
+.camera a:hover #textoculto{
+    display: flex;
+    color: #000000;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.camera .fa-video {
+    font-size: 30px; 
 }
 
 .bannercell{
@@ -201,7 +258,6 @@ img{
 .bannerEmive2{
     grid-area: bannerEmive2;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-
 }
 
 .footer { 
@@ -209,8 +265,8 @@ img{
     text-align: center;
     align-items: center;
     background:rgb(0, 0, 0);
-    
 }
+
 footer a{
     color: #FFC80B;
     font-family: "Volkhov", Georgia, serif ;
