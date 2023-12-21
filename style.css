@@ -98,16 +98,44 @@ img{
 
 }
 
+.servicos {
+    display: grid;
+    background-color: #F3BF0B;
+    justify-content: space-around;
+    grid-area: servicos;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.monitoramento,
+.alarme,
+.camera {
+    max-width: 100%;
+    background: #F3BF0B;
+    padding: 40px;
+    text-align: justify;
+    text-decoration: none;
+    list-style: none;
+    border: 2px transparent black;
+    border-radius: 8%;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+/*
 .servicos{
-    display: flex;
+    display: grid;
     background-color: #F3BF0B;
     justify-content: space-around;
     grid-area: servicos;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .monitoramento{
     grid-area: monitoramento;
-    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
+    max-width: 100%; 
     width: 100%;
     background: #F3BF0B;
     margin-top: 10px;
@@ -123,6 +151,7 @@ img{
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
 
 }
+*/
 .monitoramento a {
     color: black; 
     text-decoration: none; 
@@ -160,11 +189,11 @@ img{
     font-size: 30px; 
 }
 
+/*
 .alarme{
     grid-area: alarme;
     background: #F3BF0B;
-    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
-    width: 100%;
+    max-width: 100%; 
     margin-top: 10px;
     margin-bottom: 10px;
     margin: 10px;
@@ -176,7 +205,7 @@ img{
     border: 2px transparent black;
     border-radius: 8%;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-}
+}*/
 
 .alarme a {
     color: black; 
@@ -205,9 +234,10 @@ img{
     font-size: 30px; 
 }
 
+/*
 .camera{
     grid-area: camera;
-    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
+    max-width: 100%; 
     width: 100%;
     background: #F3BF0B;
     margin-top: 10px;
@@ -222,6 +252,7 @@ img{
     border-radius: 8%;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
 }
+*/
 
 .camera a {
     color: black; 
