@@ -107,7 +107,8 @@ img{
 }
 .monitoramento{
     grid-area: monitoramento;
-    width: 300px;
+    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
+    width: 100%;
     background: #F3BF0B;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -162,7 +163,8 @@ img{
 .alarme{
     grid-area: alarme;
     background: #F3BF0B;
-    width: 300px;
+    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin: 10px;
@@ -205,7 +207,8 @@ img{
 
 .camera{
     grid-area: camera;
-    width: 300px;
+    max-width: 100%; /* Para garantir que não ultrapasse a largura do contêiner pai */
+    width: 100%;
     background: #F3BF0B;
     margin-top: 10px;
     margin-bottom: 10px;
