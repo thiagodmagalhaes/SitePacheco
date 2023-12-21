@@ -23,6 +23,7 @@ a{
         "header header header"
         "hero hero hero"
         "bann bann bann"
+        "banner3 banner3 banner3"
         "servicos servicos servicos"
         "bannerEmive2 bannerEmive2 bannerEmive2"
         "bannercell bannercell bannercell"
@@ -98,6 +99,10 @@ img{
 
 }
 
+.banner3{
+    grid-area: banner3;
+}
+
 .servicos {
     display: grid;
     background-color: #F3BF0B;
@@ -152,7 +157,9 @@ img{
 
 }
 */
-.monitoramento a {
+.monitoramento a,
+.camera a ,
+.alarme a {
     color: black; 
     text-decoration: none; 
 }
@@ -164,115 +171,35 @@ img{
     font-size: 20px;
 }
 
-.monitoramento a:hover{
-    background: #f3c10b85;
-    color: #fff;
-    border-radius: 10px;
 
-}
-
-.monitoramento a:hover .centralizado{
+.monitoramento a:hover .centralizado,
+.camera a:hover .centralizado,
+.alarme a:hover .centralizado{
     display: none;
 }
 
-.monitoramento a  #textoculto{
+.monitoramento a  #textoculto,
+.alarme a  #textoculto,
+.camera a  #textoculto{
     display: none;
 }
 
-.monitoramento a:hover #textoculto{
+.monitoramento a:hover #textoculto,
+.alarme a:hover #textoculto,
+.camera a:hover #textoculto
+{
     display: flex;
     color: #000000;
-    font-weight: bold;
-    font-family: monospace;
+    font-size: 15;
+    font-family: "DIN Pro", Sans-serif;
 }
 .monitoramento .fa-shield-alt {
     font-size: 30px; 
 }
 
-/*
-.alarme{
-    grid-area: alarme;
-    background: #F3BF0B;
-    max-width: 100%; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 10px;
-    padding: 40px;
-    align-items: center;
-    text-align: justify;
-    text-decoration: none;
-    list-style: none;
-    border: 2px transparent black;
-    border-radius: 8%;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-}*/
-
-.alarme a {
-    color: black; 
-    background: #F3BF0B;
-    text-decoration: none; 
-}
-
-
-
-.alarme a:hover .centralizado{
-    display: none;
-}
-
-.alarme a  #textoculto{
-    display: none;
-}
-
-.alarme a:hover #textoculto{
-    display: flex;
-    color: #000000;
-    font-weight: bold;
-    font-family: monospace;
-}
 
 .alarme .fa-volume-up {
     font-size: 30px; 
-}
-
-/*
-.camera{
-    grid-area: camera;
-    max-width: 100%; 
-    width: 100%;
-    background: #F3BF0B;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 10px;
-    padding: 40px;
-    align-items: center;
-    text-align: justify;
-    text-decoration: none;
-    list-style: none;
-    border: 2px transparent black;
-    border-radius: 8%;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-}
-*/
-
-.camera a {
-    color: black; 
-    background: #F3BF0B;
-    text-decoration: none; 
-}
-
-.camera a:hover .centralizado{
-    display: none;
-}
-
-.camera a  #textoculto{
-    display: none;
-}
-
-.camera a:hover #textoculto{
-    display: flex;
-    color: #000000;
-    font-weight: bold;
-    font-family: monospace;
 }
 
 .camera .fa-video {
