@@ -23,15 +23,71 @@ a{
         "header header header"
         "hero hero hero"
         "bann bann bann"
+        "flayer1 flayer1 flayer1"
         "banner3 banner3 banner3"
         "servicos servicos servicos"
+        "comofunciona comofunciona comofunciona"
         "bannerEmive2 bannerEmive2 bannerEmive2"
         "bannercell bannercell bannercell"
         "bannerEmive bannerEmive bannerEmive"
+        "footer1 footer1 footer1"
         "footer footer footer"
+        "footer3 footer3 footer3"
+        "footer4 footer4 footer4"
         
     ;
 }
+
+
+.estrutura2{
+    background: #000000;
+    color:#fff;
+
+    .header{
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .header img{
+        height: 100%;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+        padding: 8px 0px;
+        margin: 8px 0px;
+    }
+    
+    input[type="text"][name="message"] {
+        height: 100px;
+        /* Adicionando apenas a altura para o input de mensagem */
+    }
+
+    h3{
+        font-size: 26px;
+        font-family: volkhov;
+        padding-left: 30px;
+        color: #F3BF0B;
+    }
+
+
+    button{
+        background: #F3BF0B;
+        border: none;
+        width: 100%;
+        height: 30px;
+    }
+
+    .container{
+        border: solid 2px #ffffff;
+        padding: 30px;
+    }
+
+    .footer2 .foto2 img{
+        border: solid 3px #ffffff;
+    }
+}
+
 
 .header{
     grid-area: header;
@@ -47,7 +103,9 @@ a{
 
 }
 
+
 .header nav ul{
+
     display: flex;
     flex-wrap: wrap;
     
@@ -57,7 +115,7 @@ a{
     display: block;
     padding: 10px;
     color: #fff;
-    font-size: 1.125em;
+    font-size: 0.9em;
     transition: 0.2s;
 
 }
@@ -66,7 +124,7 @@ a{
     background: #F3BF0B;
     color: #000000;
     border-radius: 10px;
-    text-decoration: none; /* Esta linha remove o sublinhado */
+    text-decoration: none; 
 }
 
 .header li + li{
@@ -78,8 +136,21 @@ a{
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
 }
 
+.flayer1{
+    grid-area: flayer1;
+}
+
+.comofunciona{
+    grid-area: comofunciona;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+}
+
 .logo{
-    width: 125px;
+    min-width: 70px;
+    max-width: 125px;
 }
 
 img{
@@ -88,7 +159,7 @@ img{
 
 .bann{
     grid-area: bann;
-    font-size: 160%;
+    font-size: 20px;
     padding: 20px;
     color: #2b2a28;
     text-align: center;
@@ -105,105 +176,39 @@ img{
 
 .servicos {
     display: grid;
-    background-color: #F3BF0B;
-    justify-content: space-around;
-    grid-area: servicos;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-}
-
-.monitoramento,
-.alarme,
-.camera {
-    max-width: 100%;
-    background: #F3BF0B;
-    padding: 40px;
-    text-align: justify;
-    text-decoration: none;
-    list-style: none;
-    border: 2px transparent black;
-    border-radius: 8%;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 20px;
-}
-
-/*
-.servicos{
-    display: grid;
-    background-color: #F3BF0B;
-    justify-content: space-around;
-    grid-area: servicos;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.monitoramento{
-    grid-area: monitoramento;
-    max-width: 100%; 
-    width: 100%;
-    background: #F3BF0B;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 10px;
-    padding: 40px;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 6px;
     align-items: center;
-    text-align: justify;
-    text-decoration: none;
-    list-style: none;
-    border: 2px transparent black;
-    border-radius: 8%;
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-
-}
-*/
-.monitoramento a,
-.camera a ,
-.alarme a {
-    color: black; 
-    text-decoration: none; 
+    grid-area: servicos;
+    grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+    grid-gap: 10px; /* Espaçamento entre as imagens */
 }
 
-.centralizado {
-    display: block;
-    text-align: center;
-    font-weight: bold; 
-    font-size: 20px;
+.patrimonio,
+.botaopanico,
+.gestao,
+.gerenciamento,
+.deslocamento,
+.suporte {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px; /* Largura mínima da imagem */
+    max-width: 200px; /* Largura máxima da imagem */
+    width: 100%;
 }
 
-
-.monitoramento a:hover .centralizado,
-.camera a:hover .centralizado,
-.alarme a:hover .centralizado{
-    display: none;
+.patrimonio, .botaopanico {
+    grid-area: auto;
 }
 
-.monitoramento a  #textoculto,
-.alarme a  #textoculto,
-.camera a  #textoculto{
-    display: none;
+.gestao, .gerenciamento {
+    grid-area: auto;
 }
 
-.monitoramento a:hover #textoculto,
-.alarme a:hover #textoculto,
-.camera a:hover #textoculto
-{
-    display: flex;
-    color: #000000;
-    font-size: 15;
-    font-family: "DIN Pro", Sans-serif;
-}
-.monitoramento .fa-shield-alt {
-    font-size: 30px; 
-}
-
-
-.alarme .fa-volume-up {
-    font-size: 30px; 
-}
-
-.camera .fa-video {
-    font-size: 30px; 
+.deslocamento, .suporte {
+    grid-area: auto;
 }
 
 .bannercell{
@@ -219,24 +224,176 @@ img{
 .bannerEmive2{
     grid-area: bannerEmive2;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+   
 }
 
-.footer { 
+.footer2 { 
     grid-area: footer;
     text-align: center;
     align-items: center;
     background:rgb(0, 0, 0);
+    display: grid; /* Adiciona a propriedade display grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Divide o footer em duas colunas */
+    grid-template-areas: "foto txtfoto txtfoto"; /* Nomeia as áreas das colunas */
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+
 }
 
-footer a{
+.footer2 .foto2 img{
+    grid-area: foto;
+    width: 50%;
+    border-radius: 100%;
+    border: solid 3px #F3BF0B;
+}
+
+.footer2 .txtfoto img{
+    width: 70px;
+    height: 70px;
+}
+
+.footer2 .txtfoto{
+    grid-area: txtfoto;
+    text-align: left;  
+
+}
+
+.footer2 h1{
+    color:#F3BF0B;
+}
+
+.footer2 h1{
+    color:#F3BF0B;
+    font-weight: bold;
+}
+
+.footer3{
+    grid-area: footer3;
+}
+
+.footer3 a{
     color: #FFC80B;
     font-family: "Volkhov", Georgia, serif ;
+    font-size: 20px;
+}
+
+.footer3 a.textorc:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer4 {
+    grid-area: footer4;
+    padding-top: 5px;
+    text-decoration: none;
+    background: #000; /* Alterado para preto */
+    color: #ffffff; /* Alterado para amarelo */
+    text-align: center;
     font-size: 10px;
 }
 
-.footer a:hover{
-    background:  #FFC80B;
-    color: #000000;
-    border-radius: 10px;
+.footer4 a.desenv {
     text-decoration: none;
+    color: #ffffff; /* Cor da fonte em amarelo */
+}
+
+.footer4 a.desenv:hover {
+    color: #ec3c3c; /* Muda a cor do texto para branco ao passar o mouse */
+}
+
+
+
+
+
+.footer1 { 
+    grid-area: footer1;
+    text-align: center;
+    align-items: center;
+    background:rgb(0, 0, 0);
+    border-top: 2px solid rgb(255, 255, 255); /* A mesma cor e espessura para manter a consistência */
+
+}
+
+
+.footer1 h2 {
+    color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.footer1 h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Posiciona a linha abaixo do h2 */
+    left: 80px; /* Inicia a linha preta após 20px da esquerda */
+    right: 80px; /* Termina a linha preta 20px antes da direita */
+    height: 2px; /* Altura da linha */
+    background-color: #ffffff; /* Cor da linha preta */
+}
+
+
+.footer1 .txt{
+    color:#F3BF0B;
+    font-weight: bold;
+    
+}
+
+#orcamentoButton {
+    flex-wrap: wrap;
+    background-color: black;
+    animation: blink 3s infinite;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9em;
+    transition: 0.2s;
+
+  }
+  
+  .textorc{
+    font-size: 20px;
+    font-family:sans-serif;
+  }
+  
+  @keyframes blink {
+    50% {
+      background-color: rgba(255, 230, 0, 0.678);
+    }
+}
+
+
+@media(max-width: 1000px){
+
+    .estrutura{
+        .logo{
+            display: none;
+        }
+        
+        display: grid; 
+        grid-template-columns: minmax(160px,1fr) 3fr 300px;
+        grid-template-areas: 
+            "header header"
+            "hero hero hero"
+            "bann bann bann"
+            "banner3 banner3 banner3"
+            "bannerEmive2 bannerEmive2 bannerEmive2"
+            "bannercell bannercell bannercell"
+            "bannerEmive bannerEmive bannerEmive"
+            "footer1 footer1 footer1"
+            "footer footer footer"
+            "footer3 footer3 footer3"
+            "footer4 footer4 footer4"
+            
+        ;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
 }
