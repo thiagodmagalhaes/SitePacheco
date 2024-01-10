@@ -13,27 +13,32 @@
 </head>
 
 <body>
-
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/popper.min.js"></script>
+
 
     <div class="estrutura">
-
         <header class="header">
             <a><img src="img/logo/logoemive.png" class="logo" alt="logoEmive" /></a>
-            <nav>
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#">Monitoramento</a></li>
-                    <li><a href="#">Alarme</a></li>
-                    <li><a href="#">Camera</a></li>
-                    <li><a href="#">Orçamento</a></li>
+                    <li><a href="orcamento.html">ORÇAMENTO</a></li>
                 </ul>
             </nav>
         </header>
 
+
+        
+
         <div class="hero">
             <img id="hero" src="img/banner/banneremive1.png" alt="hero">
+        </div>
+
+        <div class="flayer1">
+            <img id="flayer1" src="img/flayer/flayer1.png" alt="flayer1">
         </div>
         
         <div class="banner3">
@@ -45,42 +50,33 @@
         </div>
 
         <section class="servicos">
-            <div class="monitoramento">
-                <a href="#">
-                    <span class="centralizado">
-                        <i class="fas fa-shield-alt"></i>
-                        <br><br>MONITORAMENTO <br> 24 HORAS
-                    </span>
-                    <span id="textoculto"><br>Com o serviço de monitoramento EMIVE 24h você conta com o
-                    atendimento regionalizado da Unidade Volante, para um rápido
-                    suporte sempre que você precisar.</span>
-                </a>
-            </div>
+        <div class="patrimonio">
+            <img id="patrimonio" src="img/minibanner/patrimonio.png" alt="patrimonio">
+        </div>
 
-            <div class="alarme">
-                <a href="#">
-                    <span class="centralizado">
-                        <i class="fas fa-volume-up"></i>
-                        <br><br>ALARME<br>DE<br>SEGURANÇA
-                    </span>
-                    <span id="textoculto"><br>O alarme monitorado tem como objetivo proteger
-                    o ambiente em que é instalado,
-                    pois ele detecta rapidamente situações suspeitas.</span>
-                </a>
-            </div>
+        <div class="botaopanico">
+            <img id="botaopanico" src="img/minibanner/botaopanico.png" alt="botaopanico">
+        </div>
+        
+        <div class="gestao">
+            <img id="gestao" src="img/minibanner/gestao.png" alt="gestao">
+        </div>
 
-            <div class="camera">
-                <a href="#">    
-                    <span class="centralizado">
-                        <i class="fas fa-video"></i>
-                        <br><br>CÂMERA<br>DE<br>SEGURANÇA
-                    </span>
-                    <span id="textoculto"><br>O alarme monitorado tem como objetivo proteger
-                    o ambiente em que é instalado,
-                    pois ele detecta rapidamente situaçõessuspeitas.</span>
-                </a>
-            </div>
-        </section>
+        <div class="gerenciamento">
+            <img id="gerenciamento" src="img/minibanner/gerenciamento.png" alt="gerenciamento">
+        </div>
+        <div class="deslocamento">
+            <img id="deslocamento" src="img/minibanner/deslocamento.png" alt="deslocamento">
+        </div>
+
+        <div class="suporte">
+            <img id="suporte" src="img/minibanner/suporte.png" alt="suporte">
+        </div>
+
+    </section>
+        <div class="comofunciona">
+            <img id="comofunciona" src="img/flayer/comofunciona.png" alt="comofunciona">
+        </div>
 
         <div class="bannercell">
             <img id="bannercell" src="img/banner/bannercell.png" alt="bannercell">
@@ -93,11 +89,54 @@
         <div class="bannerEmive2">
             <img id="bannerEmive2" src="img/banner/banneremive2.jpeg" alt="bannerEmive2">
         </div>
-        <footer class="footer">
-            <li><a href="https://www.linkedin.com/in/thiago-magalhaes94/"> Site desenvolvido por Thiago Magalhães © -
-                    2023</a>
+        
+
+        <footer class="footer1">
+            <h2>AGENDE AGORA SUA <span class="txt">CONSULTORIA GRATUITA PRESENCIAL
+                COM</span> O FRANQUEADO ESPECIALISTA EM SEGURANÇA.</h2><br>
+        </footer>
+
+        <!-- CLASSE FOOTER ESTÁ DESCONFIGURANDO O SITE
+        <footer class="footer">        
+                <div class="foto">
+                    <img id="foto" src="img/foto/foto.png" alt="foto">
+                </div>
+                <div class="txtfoto">
+                    <h5>textooo</h>
+                    <h2>TEXTO2</h2>
+                    
+                </div>
+        </footer>-->
+
+        <footer class="footer2">
+            <div class="foto2">
+                <img id="foto2" src="img/fotoperfil.jpg" alt="foto2">
+            </div>
+            <div class="txtfoto">
+                <h5>BSB IMOVEIS E SEGURANCA LTDA</h5>
+                <h1>Guilherme Pacheco | 37 9 99995512</h1>
+                <h4>FRANQUEADO ESPECIALISTA EM SEGURANÇA ELETRÔNICA</h4>
+                <a class="desenv" href="https://www.linkedin.com/in/thiago-magalhaes94/">
+                    <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="instagram-new--v1"/>
+                </a>
+                <a class="desenv" href="https://www.linkedin.com/in/thiago-magalhaes94/">
+                    <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="whatsapp--v1"/>
+                </a>
+             </div>
+        </footer>
+
+        <footer class="footer3">
+            <button id="orcamentoButton"><li><a class="textorc"href="orcamento.html">SOLICITAR ORÇAMENTO</a></li></button>
+        </footer>
+
+        <footer class="footer4">
+            <li><a class="desenv" href="https://www.linkedin.com/in/thiago-magalhaes94/"> Este site foi desenvolvido por Thiago Magalhães ©</a>
             </li>
         </footer>
+
+        
+
+        
 
 
 
