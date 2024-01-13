@@ -365,11 +365,7 @@ img{
 
 @media(max-width: 1000px){
 
-    .estrutura{
-        .logo{
-            display: none;
-        }
-        
+    .estrutura{        
         display: grid; 
         grid-template-columns: minmax(160px,1fr) 3fr 300px;
         grid-template-areas: 
@@ -390,7 +386,40 @@ img{
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
+
+    .footer2 .foto2 img{
+        border-radius: 10%;
+        height: 150px;
+        width: 100px;
+    }
+
+    .servicos img{
+        width: 200px;
+    }
+    .bann{
+        font-size: 10px;
+    }
+    .footer1 h2{
+        font-size: 15px;
+    }
+    .txtfoto h5{
+        font-size: 10px;
+    }
+    .txtfoto h1{
+        font-size:20px;
+    }
+    .txtfoto h4{
+        font-size: 15px;
+    }
+    .footer2 .txtfoto img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .container h3{
+        font-size: 18px;
+    }
 
 }
 
