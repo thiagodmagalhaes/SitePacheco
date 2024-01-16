@@ -476,15 +476,16 @@ img{
         align-items: center;
         grid-area: servicos;
         grid-template-columns: repeat(auto-fit, minmax(50px,100px));
-        grid-gap: 20px; /* Espaçamento entre as imagens */
+        grid-gap: 10px; /* Espaçamento entre as imagens */
     }
 
     .servicos img{
         width: 100px;
     }
+
     .bann{
-        padding: 5px;
-        font-size: 15px;
+        padding: 0px;
+        font-size: 13px;
     }
 
     .bannercell{
@@ -516,6 +517,10 @@ img{
     .container h3{
         font-size: 20px;
         
+    }
+
+    .footer3 .orcamentoButton{
+        border-radius: 10px;
     }
 
 }
