@@ -117,7 +117,23 @@ a{
     color: #fff;
     font-size: 0.9em;
     transition: 0.2s;
+  }
 
+.header .orcamento{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 0.9em;
+    transition: 0.2s;
+    animation: blink 3s infinite;
+    border-radius: 10px;
+    text-decoration: none; 
+  }
+    
+  @keyframes blink {
+    50% {
+      background-color: #F3BF0B;
+    }
 }
 
 .header nav a:hover{
@@ -138,6 +154,23 @@ a{
 
 .flayer1{
     grid-area: flayer1;
+}
+
+.flayer2,
+.flayer3{
+    display: none;
+}
+
+.flayer2{
+    grid-area: flayer2;
+}
+
+.flayer3{
+    grid-area: flayer3;
+}
+
+.banner3{
+    grid-area: banner3;
 }
 
 .comofunciona{
@@ -170,9 +203,7 @@ img{
 
 }
 
-.banner3{
-    grid-area: banner3;
-}
+
 
 .servicos {
     display: grid;
@@ -213,12 +244,14 @@ img{
 
 .bannercell{
     grid-area: bannercell;
+}
 
-
+.bannermobile{
+    grid-area: bannermobile;
+    display: none;
 }
 .bannerEmive{
     grid-area: bannerEmive;
-
 }
 
 .bannerEmive2{
@@ -362,7 +395,10 @@ img{
     }
 }
 
-
+.container h3{
+    font-size: 30px;
+    color: #fff;
+}
 @media(max-width: 1000px){
 
     .estrutura{        
@@ -388,17 +424,77 @@ img{
 
 @media screen and (max-width: 400px) {
 
+    .logo{
+        min-width: 60px;
+        max-width: 80px;
+    }
+
+    .flayer1{
+        display: none;
+    }
+
+    .flayer2,
+    .flayer3{
+        display: grid;
+    }
+
+    .estrutura{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "hero hero hero"
+            "bann bann bann"
+            "flayer2 flayer2 flayer2"
+            "flayer3 flayer3 flayer3"
+            "banner3 banner3 banner3"
+            "servicos servicos servicos"
+            "comofunciona comofunciona comofunciona"
+            "bannerEmive2 bannerEmive2 bannerEmive2"
+            "bannermobile bannermobile bannermobile"
+            "bannerEmive bannerEmive bannerEmive"
+            "footer1 footer1 footer1"
+            "footer footer footer"
+            "footer3 footer3 footer3"
+            "footer4 footer4 footer4"
+            
+        ;
+    }
+
     .footer2 .foto2 img{
         border-radius: 10%;
         height: 150px;
         width: 100px;
     }
 
+    .servicos {
+        display: grid;
+        background-color: #ffffff;
+        justify-content: center;
+        padding: 6px;
+        padding-right: 24px;
+        align-items: center;
+        grid-area: servicos;
+        grid-template-columns: repeat(auto-fit, minmax(50px,100px));
+        grid-gap: 20px; /* Espaçamento entre as imagens */
+    }
+
     .servicos img{
-        width: 200px;
+        width: 100px;
     }
     .bann{
-        font-size: 10px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .bannercell{
+        grid-area: bannercell;
+        display: none;
+    }
+    
+    .bannermobile{
+        grid-area: bannermobile;
+        display: grid;
     }
     .footer1 h2{
         font-size: 15px;
@@ -418,7 +514,8 @@ img{
     }
 
     .container h3{
-        font-size: 18px;
+        font-size: 20px;
+        
     }
 
 }
