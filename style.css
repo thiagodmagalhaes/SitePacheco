@@ -371,7 +371,7 @@ img{
     flex-wrap: wrap;
     background-color: black;
     animation: blinkOrcamento 3s infinite; /* Alterado para blinkOrcamento */
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     color: #fff;
     font-size: 0.9em;
@@ -444,8 +444,7 @@ img{
 @media screen and (max-width: 500px) {
 
     .logo{
-        min-width: 60px;
-        max-width: 80px;
+        display: none;
     }
 
     .flayer1{
@@ -479,6 +478,12 @@ img{
             "footer4 footer4 footer4"
             
         ;
+    }
+
+    .whatapps{
+        img{
+            width: 20px;
+        }
     }
 
     .footer2 .foto2 img{
