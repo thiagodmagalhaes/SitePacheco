@@ -547,7 +547,8 @@ img{
 
     .bann{
         padding: 0px;
-        font-size: 13px;
+        font-size: 12px;
+        font-weight: bold;
     }
 
     .bannercell{
