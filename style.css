@@ -468,6 +468,18 @@ img{
     .suporte img{
         display: none;
     }
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 20px; /* Espaçamento entre as imagens */
+        align-items: center; /* Optional: Align items in the center vertically */
+        justify-content: space-around; /* Optional: Adjust horizontal spacing */
+    }
+
+    .servicos img {
+        width: 100%; /* Use 100% width for flexibility */
+        height: auto; /* Maintain aspect ratio */
+    }
     
 }
 
