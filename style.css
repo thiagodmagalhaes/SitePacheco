@@ -367,6 +367,12 @@ img{
     
 }
 
+.footer1 .txt2{
+    color:#F3BF0B;
+    font-weight: bold;
+    
+}
+
 #orcamentoButton {
     flex-wrap: wrap;
     background-color: black;
