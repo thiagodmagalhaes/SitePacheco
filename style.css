@@ -242,6 +242,16 @@ img{
     grid-area: auto;
 }
 
+.comofun1{
+    display: none;
+    grid-area: comofun1;
+}
+
+.comofun2{
+    display: none;
+    grid-area: comofun2;
+}
+
 .bannercell{
     grid-area: bannercell;
 }
@@ -301,21 +311,6 @@ img{
     font-weight: bold;
 }
 
-.footer3{
-    grid-area: footer3;
-}
-
-.footer3 a{
-    color: #FFC80B;
-    font-family: "Volkhov", Georgia, serif ;
-    font-size: 20px;
-}
-
-.footer3 a.textorc:hover{
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .footer4 {
     grid-area: footer4;
     padding-top: 5px;
@@ -367,7 +362,7 @@ img{
 
 
 .footer1 .txt{
-    color:#F3BF0B;
+    color:#ff0000d0;
     font-weight: bold;
     
 }
@@ -375,23 +370,40 @@ img{
 #orcamentoButton {
     flex-wrap: wrap;
     background-color: black;
-    animation: blink 3s infinite;
+    animation: blinkOrcamento 3s infinite; /* Alterado para blinkOrcamento */
     padding: 10px;
     width: 100%;
     color: #fff;
     font-size: 0.9em;
     transition: 0.2s;
+}
 
-  }
-  
-  .textorc{
+.whatapps {
+    flex-wrap: wrap;
+    background-color: black;
+    animation: blinkWhatapps 3s infinite; /* Alterado para blinkWhatapps */
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9em;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.textorc {
     font-size: 20px;
-    font-family:sans-serif;
-  }
-  
-  @keyframes blink {
+    font-family: sans-serif;
+}
+
+@keyframes blinkOrcamento {
     50% {
-      background-color: rgba(255, 230, 0, 0.678);
+        background-color: rgba(255, 230, 0, 0.678);
+    }
+}
+
+@keyframes blinkWhatapps {
+    50% {
+        background-color: rgb(0, 255, 0);
     }
 }
 
@@ -399,7 +411,7 @@ img{
     font-size: 30px;
     color: #fff;
 }
-@media(max-width: 1000px){
+@media(max-width: 1300px){
 
     .estrutura{        
         display: grid; 
@@ -422,7 +434,14 @@ img{
 
 }
 
-@media screen and (max-width: 400px) {
+@media(max-width: 1265px){
+    .suporte img{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
 
     .logo{
         min-width: 60px;
@@ -449,7 +468,8 @@ img{
             "flayer3 flayer3 flayer3"
             "banner3 banner3 banner3"
             "servicos servicos servicos"
-            "comofunciona comofunciona comofunciona"
+            "comofun1 comofun1 comofun1"
+            "comofun2 comofun2 comofun2"
             "bannerEmive2 bannerEmive2 bannerEmive2"
             "bannermobile bannermobile bannermobile"
             "bannerEmive bannerEmive bannerEmive"
@@ -467,21 +487,23 @@ img{
         width: 100px;
     }
 
-    .servicos {
-        display: grid;
-        background-color: #ffffff;
-        justify-content: center;
-        padding: 6px;
-        padding-right: 24px;
-        align-items: center;
-        grid-area: servicos;
-        grid-template-columns: repeat(auto-fit, minmax(50px,100px));
-        grid-gap: 10px; /* Espaçamento entre as imagens */
+    .servicos img{
+        width: 200px;
     }
 
-    .servicos img{
-        width: 100px;
+    .comofunciona{
+        display: none;
     }
+    .comofun1{
+        display: grid;
+        grid-area: comofun1;
+    }
+    
+    .comofun2{
+        display: grid;
+        grid-area: comofun2;
+    }
+    
 
     .bann{
         padding: 0px;
@@ -517,10 +539,6 @@ img{
     .container h3{
         font-size: 20px;
         
-    }
-
-    .footer3 .orcamentoButton{
-        border-radius: 10px;
     }
 
 }
