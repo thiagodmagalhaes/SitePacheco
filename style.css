@@ -450,7 +450,7 @@ img{
 @media screen and (max-width: 500px) {
 
     .logo{
-        display: none;
+        width: 20px;
     }
 
     .flayer1{
