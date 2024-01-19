@@ -385,6 +385,20 @@ img{
 }
 
 .whatapps {
+    display: none !important;
+    flex-wrap: wrap;
+    background-color: black;
+    animation: blinkWhatapps2 3s infinite; /* Alterado para blinkWhatapps */
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9em;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.whatapps2 {
+    display: block;
     flex-wrap: wrap;
     background-color: black;
     animation: blinkWhatapps 3s infinite; /* Alterado para blinkWhatapps */
@@ -394,6 +408,10 @@ img{
     font-size: 0.9em;
     transition: 0.2s;
     border-radius: 10px;
+}
+
+.whatapps2 img{
+    width: 20px;
 }
 
 .textorc {
@@ -408,6 +426,12 @@ img{
 }
 
 @keyframes blinkWhatapps {
+    50% {
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+@keyframes blinkWhatapps2 {
     50% {
         background-color: rgb(0, 255, 0);
     }
@@ -450,7 +474,7 @@ img{
 @media screen and (max-width: 500px) {
 
     .logo{
-        width: 20px;
+        display: none;
     }
 
     .flayer1{
@@ -487,9 +511,14 @@ img{
     }
 
     .whatapps{
+        display: flex !important;
         img{
             width: 20px;
         }
+    }
+
+    .whatapps2{
+        display: none !important;
     }
 
     .footer2 .foto2 img{
