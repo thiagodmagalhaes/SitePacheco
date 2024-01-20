@@ -209,13 +209,21 @@ img{
     display: grid;
     background-color: #ffffff;
     justify-content: center;
-    padding: 6px;
     align-items: center;
     grid-area: servicos;
+}
+
+
+.servicos2 {
+    display: none;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 6px;
+    align-items: center;
+    grid-area: servicos2;
     grid-template-columns: repeat(auto-fit, minmax(200px,200px));
     grid-gap: 10px; /* Espaçamento entre as imagens */
 }
-
 .patrimonio,
 .botaopanico,
 .gestao,
@@ -362,7 +370,8 @@ img{
 
 
 .footer1 .txt{
-    color:#ff0000d0;
+    color:#F3BF0B;
+    
     font-weight: bold;
     
 }
@@ -508,7 +517,7 @@ img{
             "flayer2 flayer2 flayer2"
             "flayer3 flayer3 flayer3"
             "banner3 banner3 banner3"
-            "servicos servicos servicos"
+            "servicos2 servicos2 servicos2"
             "comofun1 comofun1 comofun1"
             "comofun2 comofun2 comofun2"
             "bannerEmive2 bannerEmive2 bannerEmive2"
@@ -539,8 +548,17 @@ img{
         width: 100px;
     }
 
+    .servicos{
+        display: none;
+    }
+
+    .servicos2 {
+        display: grid !important;
+
+
+    }
     .servicos img{
-        width: 200px;
+        width:  180px;
     }
 
     .comofunciona{
