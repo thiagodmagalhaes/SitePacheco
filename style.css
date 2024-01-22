@@ -42,7 +42,7 @@ a{
 .estrutura2{
     background: #000000;
     color:#fff;
-    height: 850px;
+
 
     .header{
         padding-left: 30px;
@@ -64,26 +64,55 @@ a{
         /* Adicionando apenas a altura para o input de mensagem */
     }
 
-    h2{
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 30px;
-        font-family: volkhov;
-        padding-left: 30px;
-        background-color: #F3BF0B;
-        color: #000;
+
+    button{
+        background: #F3BF0B;
+        border: none;
+        width: 100%;
+        height: 30px;
     }
 
-    h3{
+    .container{
+        border: solid 2px #ffffff;
+        padding: 30px;
+    }
+
+    .footer2 .foto2 img{
+        border: solid 3px #ffffff;
+    }
+}
+
+
+.estrutura3{
+    background: #F3BF0B;
+    color:#000000;
+    height: 850px;
+
+
+    h2,h3{
+        justify-content: center;
         align-items: center;
         text-align: center;
-        justify-content: center;
-        font-size: 25px;
-        font-family: volkhov;
+    }
+
+    .header{
         padding-left: 30px;
-        background-color: #F3BF0B;
-        color: #000;
+        padding-right: 50px;
+    }
+    .header img{
+        height: 100%;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+        padding: 8px 0px;
+        margin: 8px 0px;
+    }
+    
+    input[type="text"][name="message"] {
+        height: 100px;
+        /* Adicionando apenas a altura para o input de mensagem */
     }
 
 
