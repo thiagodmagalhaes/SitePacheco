@@ -42,6 +42,7 @@ a{
 .estrutura2{
     background: #000000;
     color:#fff;
+    height: 850px;
 
     .header{
         padding-left: 30px;
@@ -63,11 +64,26 @@ a{
         /* Adicionando apenas a altura para o input de mensagem */
     }
 
-    h3{
-        font-size: 26px;
+    h2{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
         font-family: volkhov;
         padding-left: 30px;
-        color: #F3BF0B;
+        background-color: #F3BF0B;
+        color: #000;
+    }
+
+    h3{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 25px;
+        font-family: volkhov;
+        padding-left: 30px;
+        background-color: #F3BF0B;
+        color: #000;
     }
 
 
